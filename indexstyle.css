@@ -90,6 +90,13 @@ p {
     text-align: left;
 }
 
+section#contato {
+    text-align: center;
+    font-size: 14px;
+    height: 50px;
+    background-color: #e1ffe2;
+}
+
 @media (max-width: 600px) {
     nav ul li {
         display: block;
