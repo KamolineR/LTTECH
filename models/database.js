@@ -4,4 +4,4 @@ const connection = new Sequelize('PVO','root','',{
     dialect: 'mysql',
     logging: false
 });
-module.export = connection;
+module.exports = connection;
