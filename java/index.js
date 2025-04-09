@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express()
-const bodyparser = require('bodyparser')
-const connection = require('/models/database.js')
+const bodyparser = require('body-parser')
+const connection = require('./models/database.js')
 
 connection.authenticate()
     .then(() => {
         console.log('Conexão feita com sucesso.')
-    });
+    })
     .catch((msgError) => {
         console.error(msgError)
     });

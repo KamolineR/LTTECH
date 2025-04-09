@@ -8,7 +8,7 @@
     </head>
     <body>
         <div>
-            <form action="envia.php">
+            <form action="http://localhost:8080/cadastrar" method="POST">
                 <fieldset>
                     <legend>Cadastro</legend>
 
@@ -16,16 +16,16 @@
                     <input type="text" id="username" name="username" required><br><br>
 
                     <label for="username">Sobrenome:</label>
-                    <input type="text" id="username" name="username" required><br><br>
+                    <input type="text" id="sobrenome" name="sobrenome" required><br><br>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required><br><br>
 
                     <label for="username">Usuário:</label>
-                    <input type="text" id="username" name="username" required><br><br>
+                    <input type="text" id="usuario" name="usuario" required><br><br>
 
                     <label for="pwd">Senha:</label>
-                    <input type="password" id="pwd" name="pwd" required><br><br>
+                    <input type="password" id="senha" name="senha" required><br><br>
 
                     <input type="submit" value="Enviar">
                 </fieldset>
@@ -33,3 +33,4 @@
             <button class="button" type="button" onclick="document.location='index.html'">Voltar</button>
         </div>
     </body>
+</html>
