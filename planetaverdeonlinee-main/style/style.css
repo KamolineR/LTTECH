@@ -111,3 +111,10 @@ input[type="submit"]:hover {
         font-size: 1em;
     }
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
