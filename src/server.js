@@ -1,16 +1,20 @@
 const express = require('express')
-const app = express()
 const bodyparser = require('bodyparser')
-const connection = require('/models/database')
+const connection = require('./config/database')
 
-connection
-    Authenticate()
+//Conexão com o banco de dados e execução do servidor.
+connection.authenticate()
     .then(() => {
-        console.log('Conexão feita com sucesso.')
-    });
+        console.log('Conexão feita com sucesso.');
+        return connection.sync();
+    })
     .catch((MsgError) => {
         console.log(MsgError)
-    })
-    app.listen(8080, () => {
-        console.log('Rodando')
-    })
+    });
+
+
+const app = express();
+
+app.listen(8080, () => {
+    console.log('Rodando')
+});
